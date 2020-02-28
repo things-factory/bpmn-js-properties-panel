@@ -1,10 +1,9 @@
 .bpp-properties-group {
-  padding: 6px 15px 6px 15px;
+  padding: 5px 10px;
   position: relative;
   overflow: hidden;
-  transition: max-height 0.218s ease-in-out,
-              padding-top 0.218s ease-in-out,
-              padding-bottom 0.218s ease-in-out;
+  transition: max-height 0.218s ease-in-out, padding-top 0.218s ease-in-out,
+    padding-bottom 0.218s ease-in-out;
 
   &:empty {
     display: none;
@@ -25,11 +24,12 @@
 
   > .group-label {
     .label();
-    font-size: 120%;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    font-size: 12px;
+    margin: 5px 0;
     transition: margin 0.218s linear;
     font-style: italic;
+    color: @bpp-color-primary;
+    font-style: normal;
   }
 
   &:hover > .group-toggle {
